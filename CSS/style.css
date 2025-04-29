@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+    }
+body{
+    height: 100vh;
+    font-size: 13px;
+    font-family: 'Manrope';
+    background-color: var(--LightGrayishBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    color: var(--VeryDarkGrayishBlue);
+}
+.para{
+    color: var(--GrayishBlue);
+}
+.date{
+    color: var(--GrayishBlue);
+}
+.main-container{
+    background-color: white;
+    border-radius: 10px;
+    margin-inline: 20px;
+}
+.content-area{
+    padding: 45px 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    position: relative;
+
+}
+.drawer-img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.michelle-img{
+    max-width: 40px;
+    border-radius: 40px;
+}
+.imgandname{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+button,#btn1{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+.avatar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.mobile-container{
+    background-color: var(--DesaturatedDarkBlue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 65px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 25px;
+    display: none;
+}
+.desktop-container{
+    background-color: var(--DesaturatedDarkBlue);
+    max-width: 250px;   
+    border-radius: 10px;
+    padding: 15px ;
+    position: fixed;
+    bottom: 360px;
+    left: 925px;
+    display: none;
+    margin: 10px;
+
+}
+.share{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--LightGrayishBlue);
+}
+.icons{
+    display: flex;
+    column-gap: 20px;
+}
+.desktop.icon{
+    width: 25px;
+    height: 25px;
+}
+.desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow{
+    width: 20px;
+    height: 20px;
+    background-color: var(--DesaturatedDarkBlue);
+    position: absolute;
+    transform: rotate(45deg);
+    left: 100px;
+    top: 40px;
+}
+@media (min-width:1000px){
+    .main-container{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .drawer-img{
+        min-height: 100%;
+        border-radius: 10px 0px 0px 10px;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    }
+}
